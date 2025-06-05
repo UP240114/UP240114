@@ -1,0 +1,21 @@
+print(2+3) #suma (+)
+print(3-1) #resta (-)
+print(2*3) #multiplicacion (*)
+print(3/2) #division (/)
+print(3**2) #exponential (**)
+print(3%2) #modulus (%)
+print(3 // 2) # Floor division operator(//)
+
+# tipos de datos
+print(type('César Omar'))  # String
+print(type({'Medina Elías'})) 
+print(type({"Mexíco"}))    
+print(type({'I am enjoying 30 days of python'}))
+print(type(10))
+print(type(9.8))
+print(type(3.14))
+print(type(4-4j)) #complex number 
+print(type(['Asabeneh', 'Python', 'Finland']))
+print(("César Omar"))
+print(("Medina Elías"))
+print(("Mexíco"))
