@@ -1,0 +1,109 @@
+# 1. Declarar la edad, altura y un número complejo
+edad = 25  # Ejemplo de entero
+altura = 1.75  # Ejemplo de número flotante
+numero_complejo = 2 + 3j  # Ejemplo de número complejo
+
+# 2. Calcular el área de un triángulo
+base = float(input("Ingrese la base del triángulo: "))
+altura_triangulo = float(input("Ingrese la altura del triángulo: "))
+area_triangulo = 0.5 * base * altura_triangulo
+print(f"El área del triángulo es {area_triangulo}")
+
+# 3. Calcular el perímetro de un triángulo
+lado_a = float(input("Ingrese el lado a: "))
+lado_b = float(input("Ingrese el lado b: "))
+lado_c = float(input("Ingrese el lado c: "))
+perimetro_triangulo = lado_a + lado_b + lado_c
+print(f"El perímetro del triángulo es {perimetro_triangulo}")
+
+# 4. Área y perímetro de un rectángulo
+longitud = float(input("Ingrese la longitud del rectángulo: "))
+ancho = float(input("Ingrese el ancho del rectángulo: "))
+area_rectangulo = longitud * ancho
+perimetro_rectangulo = 2 * (longitud + ancho)
+print(f"Área del rectángulo: {area_rectangulo}")
+print(f"Perímetro del rectángulo: {perimetro_rectangulo}")
+
+# 5. Área y circunferencia de un círculo
+radio = float(input("Ingrese el radio del círculo: "))
+pi = 3.14
+area_circulo = pi * radio * radio
+circunferencia = 2 * pi * radio
+print(f"Área del círculo: {area_circulo}")
+print(f"Circunferencia del círculo: {circunferencia}")
+
+# 6. Ecuación y = 2x - 2
+pendiente = 2
+x_intercepto = 1  # cuando y = 0 => 0 = 2x - 2 => x = 1
+y_intercepto = -2  # cuando x = 0
+print(f"Pendiente: {pendiente}, Intercepto en x: {x_intercepto}, Intercepto en y: {y_intercepto}")
+
+# 7. Pendiente y distancia entre (2,2) y (6,10)
+x1, y1 = 2, 2
+x2, y2 = 6, 10
+pendiente_2 = (y2 - y1) / (x2 - x1)
+distancia = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+print(f"Pendiente entre los puntos: {pendiente_2}")
+print(f"Distancia euclidiana: {distancia}")
+
+# 8. Comparar pendientes
+print("¿Las pendientes son iguales?", pendiente == pendiente_2)
+
+# 9. Calcular valor de y = x^2 + 6x + 9
+for x in range(-5, 5):
+    y = x**2 + 6*x + 9
+    print(f"Para x = {x}, y = {y}")
+
+# 10. Longitud de 'python' y 'dragon' y comparación falsa
+print("Longitud de 'python':", len("python"))
+print("Longitud de 'dragon':", len("dragon"))
+print("¿Longitudes iguales y menor que 5?", len("python") == len("dragon") and len("python") < 5)
+
+# 11. Verificar si 'on' está en 'python' y 'dragon'
+print("'on' está en 'python' y 'dragon'?", 'on' in 'python' and 'on' in 'dragon')
+
+# 12. Verificar si 'jargon' está en la frase
+frase = "Espero que este curso no esté lleno de jerga."
+print("¿'jargon' está en la frase?", 'jargon' in frase)
+
+# 13. Afirmación falsa: no hay 'on' en ambos
+print("No hay 'on' en 'python' y 'dragon':", not ('on' in 'python' or 'on' in 'dragon'))
+
+# 14. Convertir longitud a float y string
+longitud_python = len("python")
+print("Longitud como float:", float(longitud_python))
+print("Longitud como string:", str(longitud_python))
+
+# 15. Verificar si un número es par
+numero = int(input("Ingrese un número para verificar si es par: "))
+print("¿Es par?", numero % 2 == 0)
+
+# 16. División de piso de 7 entre 3 y comparación
+print("¿7 // 3 == int(2.7)?", 7 // 3 == int(2.7))
+
+# 17. Comparar tipo de '10' y 10
+print("¿Tipo de '10' es igual a tipo de 10?", type('10') == type(10))
+
+# 18. Verificar si int('9.8') == 10
+try:
+    print("¿int('9.8') == 10?", int('9.8') == 10)
+except ValueError:
+    print("No se puede convertir '9.8' a entero.")
+
+# 19. Calcular salario
+horas = float(input("Ingrese horas trabajadas: "))
+tarifa = float(input("Ingrese tarifa por hora: "))
+ganancia = horas * tarifa
+print(f"Su ingreso semanal es: {ganancia}")
+
+# 20. Calcular segundos vividos
+anios = int(input("Ingrese el número de años que ha vivido: "))
+segundos = anios * 365 * 24 * 60 * 60
+print(f"Has vivido aproximadamente {segundos} segundos.")
+
+# 21. Mostrar tabla
+print("1 1 1 1 1")
+print("2 1 2 4 8")
+print("3 1 3 9 27")
+print("4 1 4 16 64")
+print("5 1 5 25 125")
