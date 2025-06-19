@@ -1,0 +1,127 @@
+# Concatenar 'Thirty', 'Days', 'Of', 'Python'
+cadena_completa = ' '.join(['Thirty', 'Days', 'Of', 'Python'])
+print(cadena_completa)  # Resultado esperado: Thirty Days Of Python
+
+# Concatenar 'Coding', 'For', 'All'
+cadena_coding = ' '.join(['Coding', 'For', 'All'])
+print(cadena_coding)  # Resultado esperado: Coding For All
+
+# Declarar variable company
+compania = "Coding For All"
+print(compania)
+
+# Mostrar la longitud de la cadena company
+print(len(compania))
+
+# Convertir todos los caracteres a mayúsculas
+print(compania.upper())
+
+# Convertir todos los caracteres a minúsculas
+print(compania.lower())
+
+# Aplicar diferentes formatos a la cadena
+print(compania.capitalize())  # Primera letra mayúscula
+print(compania.title())       # Cada palabra comienza con mayúscula
+print(compania.swapcase())    # Intercambiar mayúsculas por minúsculas
+
+# Cortar la primera palabra de la cadena
+print(compania[7:])  # Resultado esperado: For All
+
+# Comprobar si contiene la palabra 'Coding'
+print('Coding' in compania)         # Devuelve True si contiene 'Coding'
+print(compania.find('Coding'))      # Devuelve índice de inicio
+print(compania.index('Coding'))     # Igual que find(), pero lanza error si no encuentra
+
+# Reemplazar 'Coding' por 'Python'
+print(compania.replace('Coding', 'Python'))
+
+# Reemplazar 'Everyone' por 'All'
+frase = 'Python for Everyone'
+print(frase.replace('Everyone', 'All'))
+
+# Dividir la cadena usando espacios
+print(compania.split())
+
+# Dividir una cadena por comas
+empresas = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(empresas.split(', '))
+
+# Mostrar el carácter en el índice 0
+print(compania[0])
+
+# Mostrar el último carácter de la cadena
+print(compania[-1])
+
+# Mostrar el carácter en el índice 10
+print(compania[10])
+
+# Crear acrónimo de 'Python For Everyone'
+nombre = 'Python For Everyone'
+acronimo = ''.join([palabra[0] for palabra in nombre.split()]).upper()
+print(acronimo)
+
+# Crear acrónimo de 'Coding For All'
+nombre2 = 'Coding For All'
+acronimo2 = ''.join([palabra[0] for palabra in nombre2.split()]).upper()
+print(acronimo2)
+
+# Encontrar la posición de la primera letra 'C'
+print(compania.index('C'))
+
+# Encontrar la posición de la primera letra 'F'
+print(compania.index('F'))
+
+# Encontrar la última posición de la letra 'l'
+texto = 'Coding For All People'
+print(texto.rfind('l'))
+
+# Encontrar primera aparición de 'because'
+oracion = 'You cannot end a sentence with because because because is a conjunction'
+print(oracion.find('because'))
+
+# Encontrar última aparición de 'because'
+print(oracion.rindex('because'))
+
+# Extraer la frase 'because because because'
+inicio = oracion.find('because')
+fin = oracion.rindex('because') + len('because')
+print(oracion[inicio:fin])
+
+# Comprobar si empieza con 'Coding'
+print(compania.startswith('Coding'))
+
+# Comprobar si termina con 'coding'
+print(compania.endswith('coding'))
+
+# Eliminar espacios al principio y final de la cadena
+espacios = '   Coding For All      '
+print(espacios.strip())
+
+# Verificar si las cadenas son identificadores válidos
+print('30DaysOfPython'.isidentifier())       # False
+print('thirty_days_of_python'.isidentifier())  # True
+
+# Unir lista de librerías con ' # '
+librerias = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(' # '.join(librerias))
+
+# Mostrar texto con saltos de línea
+print("I am enjoying this challenge.\nI just wonder what is next.")
+
+# Mostrar texto con tabulaciones
+print("Name\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki")
+
+# Calcular el área de un círculo con formato
+radio = 10
+area = 3.14 * radio ** 2
+print("El área de un círculo con radio {} es {:.0f} metros cuadrados.".format(radio, area))
+
+# Operaciones matemáticas utilizando formato
+a, b = 8, 6
+print(f"{a} + {b} = {a + b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b:.2f}")
+print(f"{a} % {b} = {a % b}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} ** {b} = {a ** b}")
